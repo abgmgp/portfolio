@@ -1,0 +1,48 @@
+@reference "../index.css";
+
+.site-education-list {
+  @apply relative grid list-none gap-0 m-0 p-0;
+}
+
+.site-education-list::before {
+  content: '';
+  @apply absolute top-2 bottom-2 left-0 w-px;
+  background: var(--site-border);
+}
+
+.site-education-item {
+  @apply relative pb-5.5 pl-5;
+}
+
+.site-education-item:last-child {
+  @apply pb-0;
+}
+
+.site-education-item-has-school::before {
+  content: '';
+  @apply absolute top-[0.45rem] left-[-3px] size-[7px] rounded-full border;
+  background: var(--site-dot-bg);
+  border-color: var(--site-dot-border);
+}
+
+.site-education-item-header {
+  @apply mt-0 mb-0.5 text-[1.12rem] font-bold leading-[1.2];
+}
+
+.site-education-item-program {
+  @apply mt-1 mb-1 text-[0.87rem] leading-[1.35];
+}
+
+.site-education-item-date {
+  @apply mt-0.5 mb-0 text-[0.82rem] leading-[1.35];
+}
+
+.site-education-item-description {
+  @apply mt-2.5 mb-0 text-[0.94rem] leading-[1.45] text-justify;
+}
+
+@media (max-width: 768px) {
+  .site-education-item {
+    @apply pl-4;
+  }
+}

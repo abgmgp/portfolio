@@ -1,0 +1,37 @@
+@reference "../index.css";
+
+.site-skills-groups {
+  @apply grid gap-4;
+}
+
+.site-skills-group {
+  @apply grid gap-2;
+}
+
+.site-skills-group-header {
+  @apply m-0 mb-1.5 text-[1.1rem] font-semibold leading-[1.3];
+}
+
+.site-skills-list {
+  @apply flex list-none flex-wrap gap-1.5 m-0 p-0;
+}
+
+.site-skills-item {
+  @apply rounded-full px-2.5 py-0.75 text-[0.82rem] leading-[1.3];
+  color: var(--site-pill-text);
+  background: var(--site-pill-bg);
+}
+
+@media (max-width: 768px) {
+  .site-skills-groups {
+    @apply gap-3.5;
+  }
+
+  .site-skills-list {
+    @apply gap-1.25;
+  }
+
+  .site-skills-item {
+    @apply text-[0.8rem] px-2 py-0.5;
+  }
+}

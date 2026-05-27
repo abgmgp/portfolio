@@ -1,0 +1,16 @@
+@reference "../index.css";
+
+.site-about-header {
+    @apply text-[2.50rem] font-bold mb-2
+}
+
+.site-about-sub {
+    @apply text-[1.44rem] mb-5
+}
+
+.site-about-description {
+    @apply mt-3 mb-0 text-[0.95rem] leading-[1.55] text-justify
+}
+
+@media (max-width: 768px) {
+}

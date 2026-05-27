@@ -1,0 +1,54 @@
+@reference "./index.css";
+
+.site-layout {
+  width: clamp(320px, 35vw, 720px);
+  @apply min-h-screen mx-auto py-8;
+}
+
+.site-navigation-bar {
+  @apply my-1.5 flex items-center justify-between gap-4;
+}
+
+a {
+  @apply no-underline;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+.site-navigation-header {
+  @apply flex list-none gap-6.25 p-0 m-0 flex-wrap;
+}
+
+.site-theme-toggle {
+  @apply inline-grid size-8 shrink-0 place-items-center rounded-full border-0 bg-transparent p-0 text-[1rem] leading-none cursor-pointer;
+  color: var(--site-text);
+}
+
+.site-section {
+  @apply my-12;
+}
+
+.site-section-header {
+  @apply my-6 text-[1.40rem] font-bold leading-[1.2];
+}
+
+@media (max-width: 768px) {
+  .site-layout {
+    width: min(100% - 32px, 720px);
+    @apply py-6;
+  }
+
+  .site-navigation-header {
+    @apply gap-4;
+  }
+
+  .site-theme-toggle {
+    @apply size-7 text-[0.95rem];
+  }
+
+  .site-section {
+    @apply my-9;
+  }
+}

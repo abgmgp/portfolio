@@ -1,0 +1,33 @@
+@reference "../index.css";
+
+.site-projects-list {
+  @apply grid list-none gap-5 m-0 p-0;
+}
+
+.site-projects-item {
+  @apply border-l pl-4;
+  border-color: var(--site-border);
+}
+
+.site-projects-title {
+  @apply m-0 text-[1.12rem] font-bold leading-[1.2];
+}
+
+.site-projects-link {
+  @apply mt-1 inline-flex text-[0.82rem] leading-[1.35];
+  color: var(--site-muted);
+}
+
+.site-projects-description {
+  @apply mt-2 mb-0 text-[0.94rem] leading-[1.45];
+}
+
+@media (max-width: 768px) {
+  .site-projects-list {
+    @apply gap-4;
+  }
+
+  .site-projects-item {
+    @apply pl-3.5;
+  }
+}

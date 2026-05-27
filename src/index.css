@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --sans: Inter, 'Segoe UI', Ubuntu, Cantarell, 'Noto Sans', Arial, sans-serif;
+  --site-bg: #0b0b0b;
+  --site-text: #f2f2f2;
+  --site-muted: #9ca3af;
+  --site-border: #262626;
+  --site-pill-bg: #262626;
+  --site-pill-text: #f2f2f2;
+  --site-dot-bg: #111;
+  --site-dot-border: #3a3a3a;
+
+  font-family: var(--sans);
+  scroll-behavior: smooth;
+  color: var(--site-text);
+  background: var(--site-bg);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --site-bg: #f7f7f4;
+  --site-text: #171717;
+  --site-muted: #5f6368;
+  --site-border: #d4d4d0;
+  --site-pill-bg: #e5e5df;
+  --site-pill-text: #171717;
+  --site-dot-bg: #f7f7f4;
+  --site-dot-border: #8a8a84;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--site-text);
+  background: var(--site-bg);
+}
+
+button,
+input,
+textarea,
+select,
+a {
+  font: inherit;
+}

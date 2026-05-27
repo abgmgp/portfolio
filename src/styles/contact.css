@@ -1,0 +1,29 @@
+@reference "../index.css";
+
+.site-contact-intro {
+  @apply mt-0 mb-4 text-[0.95rem] leading-[1.55];
+}
+
+.site-contact-actions {
+  @apply flex flex-wrap gap-x-4 gap-y-2;
+}
+
+.site-contact-link {
+  @apply inline-flex items-baseline gap-0.75 text-[0.9rem] leading-[1.35];
+}
+
+.site-contact-link::after {
+  content: '↗';
+  @apply text-[0.8em] leading-none no-underline;
+  background: none;
+}
+
+@media (max-width: 768px) {
+  .site-contact-actions {
+    @apply gap-x-3 gap-y-1.5;
+  }
+
+  .site-contact-link {
+    @apply text-[0.84rem];
+  }
+}
