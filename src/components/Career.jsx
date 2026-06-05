@@ -3,8 +3,8 @@ import '../styles/career.css'
 
 export function Career() {
   return (
-    <section className="site-section" aria-labelledby="career">
-      <h1 className="site-section-header">Work</h1>
+    <section className="site-section" aria-labelledby="career-heading">
+      <h2 className="site-section-header" id="career-heading">Work</h2>
       <ol className="site-career-list">
         {career.map((item) => {
           const hasCompany = Boolean(item.company)

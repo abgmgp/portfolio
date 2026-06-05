@@ -3,8 +3,8 @@ import '../styles/education.css'
 
 export function Education() {
   return (
-    <section className="site-section" aria-labelledby="education">
-      <h1 className="site-section-header">Education</h1>
+    <section className="site-section" aria-labelledby="education-heading">
+      <h2 className="site-section-header" id="education-heading">Education</h2>
       <ol className="site-education-list">
         {education.map((item) => {
           const hasSchool = Boolean(item.school)
